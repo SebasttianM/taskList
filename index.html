@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Task List</h1>
+        <p class="description">
+            Organize your task efficiently
+        </p>
+
+        <!-- Cambiado a <form> para soporte nativo de la tecla Enter -->
+        <form class="form">
+            <input type="text" name="entryTask" id="entryTask" placeholder="Write down your task" required>
+            <button type="submit" id="btnAdd">Add</button>
+        </form>
+
+        <ul id="taskList"></ul>
+
+        <div class="info">
+            <p>
+                Pending Task:
+                <strong id="counter">0</strong>
+            </p>
+            <button type="button" id="btnClean">Clean all tasks</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
